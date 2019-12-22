@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>951</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>硬件配置</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>70</y>
+     <width>871</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>设备名称</string>
+    </attribute>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>130</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>设备名称</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="deviceNameLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>130</y>
+       <width>371</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>170</y>
+       <width>411</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>设备名称是服务器区分不同硬件的方式，需要唯一。</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>200</y>
+       <width>491</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>如果设备名称与连接服务器的其他设备同名，将无法连接到服务器。</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>LED</string>
+    </attribute>
+    <widget class="QCheckBox" name="ledEnableCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>91</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>启用LED</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="ledUseEventFilesRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>使用事件文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ledInputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>80</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入事件文件</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ledInputEventFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>80</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ledInputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>80</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ledOutputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输出事件文件</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ledOutputEventFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>110</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ledOutputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>110</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="ledUsePinRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>160</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>监控引脚</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ledPinPortLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>190</y>
+       <width>72</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>引脚号</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ledPinPortLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>190</y>
+       <width>113</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ledPinPlatformLabel">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>190</y>
+       <width>72</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>平台</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="ledPinPlatformComboBox">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>190</y>
+       <width>87</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>树莓派</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JZ2440</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QRadioButton" name="ledUseVirtualRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>260</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>模拟LED</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ledStatusLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>290</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>LED状态</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="ledOpenCloseComboBox">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>290</y>
+       <width>87</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>打开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>关闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>温度传感器</string>
+    </attribute>
+    <widget class="QRadioButton" name="temperatureUseEventFilesRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>使用事件文件</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="temperatureOutputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>110</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="temperatureInputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>80</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入事件文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="temperatureOutputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>110</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输出事件文件</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="temperatureEnableCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>161</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>启用温度传感器</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="temperatureInputEventFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>80</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="temperatureInputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>80</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="temperatureValueLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>190</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>温度(℃)：</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="temperatureUseVirtualRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>181</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>模拟温度传感器</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="temperatureOutputEventFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>110</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="temperatureValueDoubleSpinBox">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>190</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>水位传感器</string>
+    </attribute>
+    <widget class="QLabel" name="waterLevelInputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>90</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入事件文件</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="waterLevelValueDoubleSpinBox">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>200</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="waterLevelInputEventFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>90</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="waterLevelEnableCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>161</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>启用水位传感器</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="waterLevelUseVirtualRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>181</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>模拟水位传感器</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="waterLevelValueLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>200</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>水位(%s)：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="waterLevelOutputEventFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>120</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="waterLevelInputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>90</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="waterLevelUseEventFilesRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>使用事件文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="waterLevelOutputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>120</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输出事件文件</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="waterLevelOutputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>120</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>抽水电机控制器</string>
+    </attribute>
+    <widget class="QLabel" name="drapWaterPinPortLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>190</y>
+       <width>72</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>引脚号</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="drapWaterUseEventFilesRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>使用事件文件</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="drapWaterOutputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>110</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="drapWaterInputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>80</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入事件文件</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ledPinPortLineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>190</y>
+       <width>113</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="drapWaterOutputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>110</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输出事件文件</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="drapWaterEnableCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>191</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>启用抽水电机控制器</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="drapWaterStatusLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>290</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>抽水电机状态状态</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="drapWaterInputEventFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>80</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="drapWaterInputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>80</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="drapWaterOpenCloseComboBox">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>290</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>正在抽水</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>停止抽水</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QRadioButton" name="drapWaterUseVirtualRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>181</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>模拟抽水电机控制器</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="drapWaterUsePinRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>监控引脚</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ledOutputEventFileLineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>110</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="drapWaterPinPlatformComboBox">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>190</y>
+       <width>87</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>树莓派</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JZ2440</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="drapWaterPinPlatformLabel">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>190</y>
+       <width>72</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>平台</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_11">
+    <attribute name="title">
+     <string>喂食设备控制器</string>
+    </attribute>
+    <widget class="QLabel" name="feedPinPortLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>200</y>
+       <width>72</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>引脚号</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="feedUseEventFilesRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>使用事件文件</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="feedOutputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>120</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="feedInputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>90</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入事件文件</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="feedPinPortLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>200</y>
+       <width>113</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="feedOutputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>120</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输出事件文件</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="feedEnableCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>201</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>启用喂食设备控制器</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="feedInputEventFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>90</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="feedInputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>90</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="feedUseVirtualRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>模拟喂食设备控制器</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="feedUsePinRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>监控引脚</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="feedOutputEventFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>120</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="PinPlatformComboBox">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>200</y>
+       <width>87</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>树莓派</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JZ2440</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="feedPinPlatformLabel">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>200</y>
+       <width>72</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>平台</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_12">
+    <attribute name="title">
+     <string>麦克风</string>
+    </attribute>
+    <widget class="QLabel" name="soundLocalSoundLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>190</y>
+       <width>72</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>麦克风</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="soundEnableCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>191</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>启用麦克风</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="soundLocalFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>280</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>音频文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="soundInputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>80</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入事件文件</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="soundOutputEventFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>110</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="soundUseEventFilesRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>使用事件文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="soundOutputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>110</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输出事件文件</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="soundInputEventFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>80</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="soundUseLocalSoundRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>本地麦克风</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="soundLocalSoundComboBox">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>190</y>
+       <width>581</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="soundOutputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>110</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="soundInputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>80</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="soundUseLocalFileRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>181</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>本地音频模拟</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="soundLocalFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>290</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="soundLocalFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>290</y>
+       <width>571</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_13">
+    <attribute name="title">
+     <string>摄像头 </string>
+    </attribute>
+    <widget class="QPushButton" name="cameraOutputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>130</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="cameraLocalFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>300</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>视频文件</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="cameraLocalFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>310</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="cameraEnableCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>191</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>启用摄像头</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="cameraUseLocalCameraRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>180</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>本地摄像头</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="cameraUseLocalFileRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>280</y>
+       <width>181</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>本地视频模拟</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="cameraInputEventFilePushButton">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>100</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="cameraLocalFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>310</y>
+       <width>571</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="cameraInputEventFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>100</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cameraLocalcameraComboBox">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>210</y>
+       <width>581</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="cameraUseEventFilesRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>115</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>使用事件文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="cameraInputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>100</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入事件文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="cameraOutputEventFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>130</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输出事件文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="cameraLocalCameraLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>210</y>
+       <width>72</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>摄像头</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="cameraOutputEventFileLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>130</y>
+       <width>551</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="cameraStreamLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>380</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>视频流URL</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="cameraStreamLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>390</y>
+       <width>571</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="cameraUseStreamRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>360</y>
+       <width>181</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>视频流模拟</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>20</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Aharoni</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>硬件配置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelPushButton">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>570</y>
+     <width>93</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="setPushButton">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>570</y>
+     <width>93</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>应用</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okPushButton">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>570</y>
+     <width>93</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
